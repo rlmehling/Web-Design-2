@@ -1,0 +1,151 @@
+/* always reset box sizing */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Import Google Fonts Here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  /* set body font */
+  font-family: 'Open Sans', sans-serif;
+  font-size: clamp(0.25em, 0.5em + 1vw, 2em); /* setting up font size to ensure responsiveness with different screen sizes */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* set heading fonts */
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1em, 1em + 1vw, 3em); /* setting up font size to ensure responsiveness with different screen sizes */
+}
+
+header {
+  background-color: #593C1F;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img, .logo h1 {
+  margin: 10px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.area {
+  display: grid;
+  grid-template-areas: 
+    "main"
+    "main"
+    "products"
+    "sidebar";
+}
+
+.main {
+  background-color: #FF7F00;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  grid-area: main;
+}
+
+.main h1 {
+  margin: 10px;
+  padding: 10px;
+}
+
+.main p {
+  margin: 20px 0;
+}
+
+.main #p1 {
+  background-color: white;
+  color: #FF7F00;
+  border: 2px solid #FF7F00;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.main #p2 {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.feature {
+  grid-area: product;
+}
+
+.feature h1 {
+  margin: 15px;
+}
+
+.product {
+  padding: 10px;
+  margin: 10px;
+}
+
+.card .box {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  color: #00C3FF;
+}
+
+
+.main-sidebar {
+  float: right;
+  background-color: lightgrey;
+  padding: 10px;
+  grid-area: sidebar;
+}
+
+.special {
+  margin: 10px;
+}
+
+.special a {
+  text-decoration: none;
+  color: #00C3FF;
+}
+
+footer {
+  background-color: #593C1F;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 1366px) {
+  .area {
+    display: grid;
+    grid-template-areas: 
+    "main main main main main"
+    "main main main main main"
+    "product product product sidebar sidebar"
+    "product product product sidebar sidebar";
+  }
+}

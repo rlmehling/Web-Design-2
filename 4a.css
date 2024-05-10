@@ -1,0 +1,183 @@
+
+* {
+  box-shadow: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+section {
+  padding: 4vh 4vw;
+}
+
+/* Base Styles Cards */
+.article-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.article-list .article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  background: white;
+  max-width: 350px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  transition-property: all;
+  transition-duration: 1s;
+
+}
+
+/* Add hover styles for card */
+.article-list .article:hover {
+    box-shadow: 0 0 20px black;
+
+}
+
+.article a {
+  text-decoration: none;
+  color: teal;
+}
+
+.article a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+
+.article-list .article img {
+  order: 1;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.article-list .article .article-byline {
+  order: 2;
+  font-size: 16px;
+  margin: 0;
+  padding: .25em .75em;
+}
+
+.article-list .article .article-title { 
+  order: 3;
+  margin: 0; 
+  padding: .25em .75em;
+  line-height: 1.4;
+
+}
+
+
+.article-list .article .article-summary {
+  order: 4;
+  height: auto;
+  margin: 0;
+  padding: .25em .75em 1em .7em;
+}
+
+
+
+.article-comments {
+  position: absolute;
+  top: 0;
+  right: 0;
+  order: 2;
+  display: inline-block;
+  padding: .75em;
+  margin: .75em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: teal;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 100%;
+  text-align: center;
+}
+
+/* =====================
+    Buttons Styles
+======================== */
+
+.btn {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  background: #ddd;
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 1s;
+
+}
+
+/* add hover styles for default button and include transitions */
+.btn:hover {
+    background-color: gray;
+
+}
+
+
+.btn-primary {
+  background: blue;
+  color: white;
+
+}
+
+/* add hover styles for primary button and include transitions */
+.btn-primary:hover {
+    background-color: darkblue;
+}
+
+
+.btn-success {
+  background: lime;
+  color: white;
+}
+/* add hover styles for primary button and include transitions */
+
+.btn-success:hover {
+    background-color: green;
+}

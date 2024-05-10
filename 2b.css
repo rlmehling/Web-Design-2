@@ -1,0 +1,127 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700');
+/* reset box sizing */
+* {
+  box-shadow: border-box;
+}
+
+body {
+  background-color: #ddd;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/* Cards */
+.article-list {
+ /* add flex properties below */
+  
+  /* remove the default list styles of the ul */
+  list-style: none;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.article-list .article {
+  /* more flex properties for the contents of the card */
+  
+  background: white;
+  flex-basis: 300px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.article a {
+  text-decoration: none;
+  color: teal;
+}
+
+.article a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+
+.article-list .article img {
+  /* use the order property to set the order of all of the elements to match the screenshot from the assignment. Remember all flex children will need an order value */
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.article-list .article .article-byline {
+  /* use the order property to set the order of all of the elements to match the screenshot from the assignment. Remember all flex children will need an order value */
+  margin: 0;
+  padding: .25em .75em;
+}
+
+.article-list .article .article-title { 
+  /* use the order property to set the order of all of the elements to match the screenshot from the assignment. Remember all flex children will need an order value */
+  padding: .25em .75em;
+  line-height: 1.4;
+
+}
+
+
+.article-list .article .article-summary {
+  /* use the order property to set the order of all of the elements to match the screenshot from the assignment. Remember all flex children will need an order value */
+  align-content: auto;
+  margin: 0;
+  padding: .25em .75em 1em .7em;
+}
+
+
+
+.article-comments {
+  /* You're getting some help with the comments counter here but try moving it to another place on the card to experiment using top and right. */
+  position: absolute;
+  top: 0;
+  right: 0;
+  order: 2;
+  display: inline-block;
+  padding: .75em;
+  margin: .75em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: teal;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 100%;
+  text-align: center;
+}
+
+
+
+

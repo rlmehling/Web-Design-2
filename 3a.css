@@ -1,0 +1,108 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700');
+* {
+  box-shadow: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+main {
+  /* just some space around the top and sides of the tag that wraps all content */
+  padding: 4vh 4vw;
+}
+
+/* Base Grid Style */
+.grid {
+  /* class that adds display: grid; to parent elements */
+  display: grid;
+}
+
+/* Base Styles for Grid Children */
+.grid div {
+  /* center the numbers in the boxes */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 20px;
+  font-size: 20pz;
+  font-weight: bold;
+  background: purple;
+  color: white;
+}
+
+/* Grid Template Columns */
+#grid-columns {
+ /* use grid-template-columns and grid-template-rows with grid-gap here */
+ grid-template-columns: repeat(5, 1fr);
+ grid-template-rows: 1fr;
+ grid-gap: 20px;
+}
+
+
+/* Grid Template Columns - Mixed Units */
+/* Grid Template Columns */
+#grid-columns-mixed {
+  /* use grid-template-columns and grid-template-rows with grid-gap here */
+  grid-template-columns: 1fr 1fr 300px 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+}
+
+
+/* Grid Template Columns - with Grid Template Rows */
+/* Grid Template Columns */
+#grid-columns-rows {
+  /* use grid-template-columns and grid-template-rows with grid-gap here */
+  grid-template-columns: 200px 100px 200px;
+  grid-template-rows: 100px 200px;
+  grid-gap: 20px;
+}
+
+/* Grid Template Columns + Minmax Function */
+#grid-minmax {
+  /* use grid-template-columns and grid-template-rows with grid-gap here
+  - Also use minmax() here 
+  */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: minmax(150px, 1fr);
+  grid-gap: 20px;
+}
+
+
+

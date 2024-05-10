@@ -1,0 +1,128 @@
+
+/* ================
+Nav Basic 
+===================*/
+/* Navbar */
+.navbar {
+    margin-top: 20px;
+    background-color: #333;
+}
+
+.menu-basic {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu-basic li {
+    /* apply width to li on mobile */
+    width: 50%;
+}
+
+.menu-basic li a {
+  /* add padding, line-height, color, etc. */
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  line-height: 45px;
+}
+.menu-basic li a:hover {
+  /* reverse bg and color styles on hover */
+  color: #333;
+  background-color: white;
+}
+
+
+* { /* resets box-sizing property */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+  padding: 20px;
+}
+
+/* styles for screens 768 and larger */
+@media screen and (min-width: 768px) {
+  .menu-basic {
+   /* add flex styles for desktiop */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .menu-basic li {
+    /* resets width of list items on larger screens */
+   width: auto;
+  }
+
+  .menu-basic li a {
+    /* resets width of links items on larger screens */
+    width: 100%;
+  }
+}
+
+
+/* ================
+    Nav Fixed 
+===================*/
+
+main {
+  padding-top: 60px;
+}
+
+.menu-fixed {
+ /* add positioning and flex styles below */
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu-fixed li {
+  /* set width */
+  width: 50%;
+}
+
+.menu-fixed li a {
+  /* set links styles with padding, color, line-height, etc. */
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 30px;
+  line-height: 45px;
+}
+
+.menu-fixed li a:hover {
+  /* hover styles */
+  background-color: white;
+  color: #333;
+}
+
+
+@media screen and (min-width: 768px) {
+  .menu-fixed {
+   /* positioning and flex styles */
+   display: flex;
+   flex-wrap: wrap;
+   position: fixed;
+  }
+
+  .menu-fixed li {
+    /* reset width */
+    width: auto; 
+  }
+
+  .menu-fixed li a {
+    /*reset width */
+    width: 100%;
+  }
+
+}

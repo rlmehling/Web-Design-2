@@ -1,0 +1,93 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700');
+* {
+  box-shadow: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+.flex {
+  /* give parents flex property */
+  display: flex;
+}
+
+.flex div {
+  /* giving the flexed children style */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.flex div:nth-child(1) {
+  background: red;
+}
+
+.flex div:nth-child(2) {
+  background: yellow;
+}
+
+.flex div:nth-child(3) {
+  background: blue;
+}
+
+.flex div:nth-child(4) {
+  background: orange;
+}
+
+.flex div:nth-child(5) {
+  background: green;
+}
+
+.f-row {
+  flex-direction: row;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+
+
+
+
+
+

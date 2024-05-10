@@ -1,0 +1,163 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,400,700');
+* {
+  box-shadow: border-box;
+}
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1.125em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+/* header */
+header {
+  background: #333;
+  text-align: center;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a{
+  display: block;
+  padding: 10px 15px;
+}
+main {
+}
+
+.main-content {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content > * {
+  padding: 20px;
+}
+
+.main-content .section1 {
+  flex: 80vw;
+}
+
+.main-content .sidebar {
+  flex: 20vw;
+  background: lightblue;
+  padding: 10px;
+}
+
+.one {
+  display: block;
+}
+
+.col-1 {
+  display: block;
+}
+
+.two {
+  display: block;
+}
+
+/* clearfix technique to account for columns with varying height */
+.two:after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+.col-2 {
+  display: block;
+  float: left;
+  width: 45%; /* 45 x 2 (col) = 90% */
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  /* 2.5(L) + 2.5(R) x 2 (COL) = 10% */
+}
+
+.three {
+  display: flex;
+  background: darkorange;
+}
+
+.col-3 {
+  background: white;
+  padding: 10px;
+  margin: 5px;
+}
+
+footer {
+  background: #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+footer ul li{
+ padding: 5px;
+}
+
+/* INDEX page */
+.assignments {
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 0;
+  
+}
+.assignments > li {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
